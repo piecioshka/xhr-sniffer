@@ -1,0 +1,51 @@
+{
+    "name": "xhr-sniffer",
+    "description": "Sniff HTTP requests making by XHR in browser or http module in Node.js",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf coverage/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "npm run test:unit",
+        "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "nyc npm run test",
+        "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
+        "lint": "eslint src/ demo/ test/"
+    },
+    "devDependencies": {
+        "eslint": "^4.13.1",
+        "eslint-config-piecioshka": "^2.0.0",
+        "istanbul": "^0.4.5",
+        "jasmine": "^2.8.0",
+        "node-fetch": "^1.7.3",
+        "nyc": "^12.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/piecioshka/xhr-sniffer"
+    },
+    "files": [
+        "demo",
+        "src",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [
+        "sniff",
+        "sniffer",
+        "sniffing",
+        "xmlhttprequest",
+        "xhr",
+        "node",
+        "nodejs",
+        "http",
+        "https",
+        "protocol"
+    ],
+    "main": "./src/server.js"
+}
