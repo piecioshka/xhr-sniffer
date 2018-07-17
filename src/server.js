@@ -9,9 +9,8 @@ const ORIGINAL_REQUEST = http.request;
 // WARNING: https module use http
 
 function sniffMethod(label, fn) {
-    return function (opts, callback) {
-        const self = this;
-        const req = fn.call(self, opts, function (res) {
+    return (opts, callback) => {
+        const req = fn.call(this, opts, (res) => {
             const startRequestTime = Date.now();
 
             res.on('end', () => {
@@ -29,13 +28,11 @@ function sniffMethod(label, fn) {
             });
 
             if (callback) {
-                return callback.apply(self, arguments);
+                return callback.apply(this, arguments);
             }
         });
 
-        req.on('error', (err) => {
-            console.error(err);
-        });
+        req.on('error', console.log);
 
         return req;
     };
