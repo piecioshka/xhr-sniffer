@@ -15,10 +15,10 @@
         "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
         "coverage": "nyc npm run test",
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
-        "lint": "eslint src/ demo/ test/"
+        "lint": "eslint src/ demo/"
     },
     "devDependencies": {
-        "eslint": "^4.13.1",
+        "eslint": "^5.1.0",
         "eslint-config-piecioshka": "^2.0.0",
         "istanbul": "^0.4.5",
         "jasmine": "^2.8.0",
