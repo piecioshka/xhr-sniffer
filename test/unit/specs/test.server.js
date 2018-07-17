@@ -14,14 +14,22 @@ function delay(time) {
 
 describe('xhr-sniffer', () => {
     const REQUEST_DELAY = 400;
+    let logger;
+
+    beforeAll(() => {
+        logger = spyOn(console, 'log');
+    });
 
     beforeEach(() => {
         sniffer.uninstall();
     });
 
+    afterEach(() => {
+        logger.calls.reset();
+    });
+
     it('should execute console.log', (done) => {
 
-        const logger = spyOn(console, 'log');
 
         Promise.resolve()
             .then(() => {
@@ -51,8 +59,6 @@ describe('xhr-sniffer', () => {
     });
 
     it('should returns Date in console.log', (done) => {
-
-        const logger = spyOn(console, 'log');
         const year = new Date().getFullYear();
 
         Promise.resolve()
