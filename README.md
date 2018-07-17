@@ -1,10 +1,16 @@
 # xhr-sniffer ([npm](https://www.npmjs.com/package/xhr-sniffer))
 
 [![npm version](https://badge.fury.io/js/xhr-sniffer.svg)](https://badge.fury.io/js/xhr-sniffer)
-![](https://img.shields.io/npm/dt/xhr-sniffer.svg)
-[![Travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/xhr-sniffer)
+[![downloads count](https://img.shields.io/npm/dt/xhr-sniffer.svg)](https://www.npmjs.com/~piecioshka)
+[![travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/xhr-sniffer)
 
 > Sniff HTTP requests making by XHR in browser or http module in Node.js
+
+## Features
+
+* :white_check_mark: Display logs of `XMLHttpRequests` in DevTools Console
+* :white_check_mark: Display logs of `http` module in `Node.js`
+* :negative_squared_cross_mark: Sniffing `Fetch API`
 
 ## Install
 

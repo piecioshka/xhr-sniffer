@@ -13,7 +13,7 @@ function delay(time) {
 }
 
 describe('xhr-sniffer', () => {
-    const REQUEST_DELAY = 300;
+    const REQUEST_DELAY = 400;
 
     beforeEach(() => {
         sniffer.uninstall();
