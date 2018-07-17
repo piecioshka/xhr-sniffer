@@ -32,7 +32,7 @@ function sniffMethod(label, fn) {
             }
         });
 
-        req.on('error', console.log);
+        req.on('error', console.error);
 
         return req;
     };
