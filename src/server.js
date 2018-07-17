@@ -26,11 +26,13 @@ function sniffMethod(label, fn) {
                     url,
                     duration
                 }));
+
+
+                if (callback) {
+                    return callback.apply(self, arguments);
+                }
             });
 
-            if (callback) {
-                return callback.apply(self, arguments);
-            }
         });
 
         req.on('error', (err) => {
