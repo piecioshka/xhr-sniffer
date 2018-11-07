@@ -10,7 +10,7 @@
 
 * :white_check_mark: Display logs of `XMLHttpRequests` in DevTools Console
 * :white_check_mark: Display logs of `http` module in `Node.js`
-* :negative_squared_cross_mark: Sniffing `Fetch API`
+* :no_entry: Sniffing `Fetch API`
 
 ## Install
 
