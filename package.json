@@ -16,12 +16,14 @@
         "coverage": "nyc npm run test && nyc report --reporter=html",
         "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
-        "lint": "eslint src/ demo/"
+        "lint": "eslint src/ demo/",
+        "deploy": "gh-pages -d ."
     },
     "devDependencies": {
         "codecov": "^3.3.0",
         "eslint": "^5.16.0",
         "eslint-config-piecioshka": "^2.0.1",
+        "gh-pages": "^2.0.1",
         "jasmine": "^3.4.0",
         "nock": "^10.0.6",
         "node-fetch": "^2.3.0",

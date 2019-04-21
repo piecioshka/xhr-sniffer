@@ -28,6 +28,7 @@
             const method = self.method.padEnd(MAX_HTTP_METHOD_NAME);
 
             console.log(window.formatter({
+                label: 'XMLHttpRequest',
                 method,
                 status,
                 url,
