@@ -7,6 +7,10 @@
 
 Sniff HTTP requests making by XHR in browser or http module in Node.js
 
+## Demo 🎉
+
+<https://piecioshka.github.io/xhr-sniffer/demo/browser/>
+
 ## Features
 
 * :white_check_mark: Display logs of `XMLHttpRequests` in DevTools Console
