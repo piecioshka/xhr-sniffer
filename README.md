@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/xhr-sniffer.svg)](https://badge.fury.io/js/xhr-sniffer)
 [![downloads count](https://img.shields.io/npm/dt/xhr-sniffer.svg)](https://www.npmjs.com/~piecioshka)
-[![travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/xhr-sniffer)
+[![travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg)](https://travis-ci.org/piecioshka/xhr-sniffer)
 
 > Sniff HTTP requests making by XHR in browser or http module in Node.js
 
