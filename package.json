@@ -1,0 +1,56 @@
+{
+    "name": "xhr-sniffer",
+    "description": "Sniff HTTP requests making by XHR in browser or http module in Node.js",
+    "version": "1.0.2",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf coverage/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "npm run test:unit",
+        "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
+        "lint": "eslint src/ demo/",
+        "deploy": "gh-pages -d ."
+    },
+    "devDependencies": {
+        "codecov": "^3.3.0",
+        "eslint": "^5.16.0",
+        "eslint-config-piecioshka": "^2.0.1",
+        "gh-pages": "^2.0.1",
+        "jasmine": "^3.4.0",
+        "nock": "^10.0.6",
+        "node-fetch": "^2.3.0",
+        "nyc": "^14.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/piecioshka/xhr-sniffer"
+    },
+    "files": [
+        "demo",
+        "src",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [
+        "sniff",
+        "sniffer",
+        "sniffing",
+        "xmlhttprequest",
+        "request",
+        "xhr",
+        "node",
+        "nodejs",
+        "http",
+        "https",
+        "protocol"
+    ],
+    "main": "./src/server.js"
+}
