@@ -13,17 +13,19 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "nyc npm run test",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
         "lint": "eslint src/ demo/"
     },
     "devDependencies": {
-        "eslint": "^5.1.0",
-        "eslint-config-piecioshka": "^2.0.0",
-        "istanbul": "^0.4.5",
-        "jasmine": "^2.8.0",
-        "node-fetch": "^1.7.3",
-        "nyc": "^12.0.2"
+        "codecov": "^3.3.0",
+        "eslint": "^5.16.0",
+        "eslint-config-piecioshka": "^2.0.1",
+        "jasmine": "^3.4.0",
+        "nock": "^10.0.6",
+        "node-fetch": "^2.3.0",
+        "nyc": "^14.0.0"
     },
     "repository": {
         "type": "git",
@@ -40,6 +42,7 @@
         "sniffer",
         "sniffing",
         "xmlhttprequest",
+        "request",
         "xhr",
         "node",
         "nodejs",

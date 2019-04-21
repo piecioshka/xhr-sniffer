@@ -18,9 +18,11 @@ function sniffMethod(label, fn) {
                 const duration = Date.now() - startRequestTime;
                 const url = res.req.path;
                 const status = res.statusMessage;
-                const method = res.req.method.padEnd(MAX_HTTP_METHOD_NAME);
+                const methodRaw = res.req.method || 'GET';
+                const method = methodRaw.padEnd(MAX_HTTP_METHOD_NAME);
 
                 console.log(formatter({
+                    label,
                     method,
                     status,
                     url,
@@ -33,7 +35,10 @@ function sniffMethod(label, fn) {
             }
         });
 
-        req.on('error', console.error);
+        req.on('error', (err) => {
+            console.error(err);
+            throw new Error(err.message);
+        });
 
         return req;
     };

@@ -10,8 +10,8 @@ function now(d = new Date()) {
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}.${d.getMilliseconds()}`;
 }
 
-function formatter({ method, status, url, duration }) {
-    return `[${now()}] ${method} ${status} ${url} [${duration}ms]`;
+function formatter({ label, method, status, url, duration }) {
+    return `[${now()}] ${label} ${method} ${status} ${url} [${duration}ms]`;
 }
 
 // Exports

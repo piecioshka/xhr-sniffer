@@ -14,6 +14,7 @@ module.exports = {
 
     // http://eslint.org/docs/rules/
     rules: {
+        'require-jsdoc': ['off'],
         'no-console': ['off'],
         'object-shorthand': ['off'],
         'no-implicit-globals': ['off'],
