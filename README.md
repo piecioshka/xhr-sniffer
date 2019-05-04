@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/xhr-sniffer.svg)](https://badge.fury.io/js/xhr-sniffer)
 [![downloads count](https://img.shields.io/npm/dt/xhr-sniffer.svg)](https://www.npmjs.com/~piecioshka)
 [![travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg)](https://travis-ci.org/piecioshka/xhr-sniffer)
-[![codecov](https://codecov.io/gh/piecioshka/xhr-sniffer/branch/master/graph/badge.svg)](https://codecov.io/gh/piecioshka/xhr-sniffer)
+[![coveralls](https://coveralls.io/repos/github/piecioshka/xhr-sniffer/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/xhr-sniffer?branch=master)
 
 Sniff HTTP requests making by XHR in browser or http module in Node.js
 
@@ -50,15 +50,11 @@ Next, make some XMLHttpRequests requests.
 
 ## Unit tests
 
-Use Jasmine to setup unit test:
-
 ```bash
 npm test
 ```
 
 ## Code coverage
-
-Use Istanbul to get code coverage ratio:
 
 ```bash
 npm run coverage
