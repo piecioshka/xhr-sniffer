@@ -5,7 +5,7 @@
 [![travis](https://img.shields.io/travis/piecioshka/xhr-sniffer.svg)](https://travis-ci.org/piecioshka/xhr-sniffer)
 [![coveralls](https://coveralls.io/repos/github/piecioshka/xhr-sniffer/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/xhr-sniffer?branch=master)
 
-Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
+:hammer: Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
 
 ## Demo 🎉
 
