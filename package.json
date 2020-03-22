@@ -52,5 +52,6 @@
         "https",
         "protocol"
     ],
-    "main": "./src/server.js"
+    "main": "./src/server.js",
+    "dependencies": {}
 }
