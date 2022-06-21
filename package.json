@@ -14,13 +14,11 @@
         "test": "npm run test:unit",
         "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
         "lint": "eslint src/ demo/",
         "deploy": "gh-pages -d ."
     },
     "devDependencies": {
-        "coveralls": "^3.0.11",
         "eslint": "^6.8.0",
         "eslint-config-piecioshka": "^2.0.2",
         "gh-pages": "^2.2.0",
@@ -52,6 +50,5 @@
         "https",
         "protocol"
     ],
-    "main": "./src/server.js",
-    "dependencies": {}
+    "main": "./src/server.js"
 }
