@@ -6,7 +6,7 @@
 
 :hammer: Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/xhr-sniffer/demo/browser/>
 
