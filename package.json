@@ -1,7 +1,7 @@
 {
     "name": "xhr-sniffer",
     "description": "Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
