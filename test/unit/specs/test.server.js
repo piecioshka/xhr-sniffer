@@ -7,7 +7,7 @@ const nFetch = require('node-fetch').default;
 
 const sniffer = require('../../../src/server');
 
-nock('http://example.org/')
+nock('https://example.org/')
     .get('/first').reply(200, '1')
     .get('/second').reply(200, '2')
     .get('/third').reply(200, '3')
@@ -29,7 +29,7 @@ describe('xhr-sniffer', () => {
 
         Promise.resolve()
             .then(() => {
-                return nFetch('http://example.org/first');
+                return nFetch('https://example.org/first');
             })
             .then(delay(REQUEST_DELAY))
             .then(() => {
@@ -40,7 +40,7 @@ describe('xhr-sniffer', () => {
                 sniffer.install();
             })
             .then(() => {
-                return nFetch('http://example.org/second');
+                return nFetch('https://example.org/second');
             })
             .then(delay(REQUEST_DELAY))
             .then(() => {
@@ -66,7 +66,7 @@ describe('xhr-sniffer', () => {
                 sniffer.install();
             })
             .then(() => {
-                return nFetch('http://example.org/third');
+                return nFetch('https://example.org/third');
             })
             .then(delay(REQUEST_DELAY))
             .then(() => {
