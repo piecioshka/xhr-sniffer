@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/xhr-sniffer.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml)
 
-:hammer: Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
+🔨 Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
 
 ## Preview 🎉
 
@@ -14,9 +14,9 @@
 
 ## Features
 
-* :white_check_mark: Display logs of `XMLHttpRequests` in DevTools Console
-* :white_check_mark: Display logs of `http` module in `Node.js`
-* :no_entry: Sniffing `Fetch API`
+* ✅ Display logs of `XMLHttpRequests` in DevTools Console
+* ✅ Display logs of `http` module in `Node.js`
+* ⛔️ Sniffing `Fetch API`
 
 ## Install
 
