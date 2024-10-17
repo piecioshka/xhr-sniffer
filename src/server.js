@@ -4,7 +4,7 @@
 const { formatter } = require('./common');
 
 const MAX_HTTP_METHOD_NAME = 6;
-const http = require('http');
+const http = require('https');
 const ORIGINAL_REQUEST = http.request;
 
 // WARNING: https module use http
