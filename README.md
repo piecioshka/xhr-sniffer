@@ -15,9 +15,9 @@
 
 ## Features
 
-* ✅ Display logs of `XMLHttpRequests` in DevTools Console
-* ✅ Display logs of `http` module in `Node.js`
-* ⛔️ Sniffing `Fetch API`
+- ✅ Display logs of `XMLHttpRequests` in DevTools Console
+- ✅ Display logs of `http` module in `Node.js`
+- ⛔️ Sniffing `Fetch API`
 
 ## Install
 
@@ -49,18 +49,6 @@ Attach files in `<head>` tag:
 ```
 
 Next, make some XMLHttpRequests requests.
-
-## Unit tests
-
-```bash
-npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
-```
 
 ## License
 
