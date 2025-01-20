@@ -19,13 +19,13 @@
 - ✅ Display logs of `http` module in `Node.js`
 - ⛔️ Sniffing `Fetch API`
 
-## Install
+## Usage
+
+Installation:
 
 ```bash
 npm install xhr-sniffer
 ```
-
-## Usage
 
 ### Sniff requests in `Node.js`
 
