@@ -35,7 +35,8 @@
         "demo",
         "src",
         "package.json",
-        "README.md"
+        "README.md",
+        "LICENSE"
     ],
     "keywords": [
         "sniff",
