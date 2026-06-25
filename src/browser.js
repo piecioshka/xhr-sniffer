@@ -1,5 +1,7 @@
 'use strict';
 
+const { formatter } = require('./common');
+
 (function (XMLHttpRequest) {
 
     const MAX_HTTP_METHOD_NAME = 6;
@@ -27,7 +29,7 @@
             const status = self.statusText;
             const method = self.method.padEnd(MAX_HTTP_METHOD_NAME);
 
-            console.log(window.formatter({
+            console.log(formatter({
                 label: 'XMLHttpRequest',
                 method,
                 status,

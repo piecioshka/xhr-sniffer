@@ -14,17 +14,6 @@ function formatter({ label, method, status, url, duration }) {
     return `[${now()}] ${label} ${method} ${status} ${url} [${duration}ms]`;
 }
 
-// Exports
-if (typeof module === 'object' && module.exports) {
-    module.exports = {
-        formatter: formatter
-    };
-} else if (typeof define === 'function' && define.amd) {
-    define(() => {
-        return {
-            formatter: formatter
-        };
-    });
-} else {
-    window.formatter = formatter;
-}
+module.exports = {
+    formatter: formatter
+};

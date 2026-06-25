@@ -41,11 +41,10 @@ xhrSniffer.uninstall();
 
 ### Sniff requests in `browser`
 
-Attach files in `<head>` tag:
+Attach the bundled file in `<head>` tag:
 
 ```html
-<script src="xhr-sniffer/src/common.js"></script>
-<script src="xhr-sniffer/src/browser.js"></script>
+<script src="xhr-sniffer/dist/xhr-sniffer.browser.js"></script>
 ```
 
 Next, make some XMLHttpRequests requests.
