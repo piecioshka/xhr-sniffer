@@ -21,13 +21,15 @@ function sniffMethod(label, fn) {
                 const methodRaw = res.req.method || 'GET';
                 const method = methodRaw.padEnd(MAX_HTTP_METHOD_NAME);
 
-                console.log(formatter({
-                    label,
-                    method,
-                    status,
-                    url,
-                    duration
-                }));
+                console.log(
+                    formatter({
+                        label,
+                        method,
+                        status,
+                        url,
+                        duration
+                    })
+                );
             });
 
             if (callback) {

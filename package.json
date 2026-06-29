@@ -17,18 +17,31 @@
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
         "build": "esbuild src/browser.js --bundle --outfile=dist/xhr-sniffer.browser.js --platform=browser",
         "lint": "eslint src/ demo/",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
         "prepublishOnly": "npm run build",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d ."
+        "deploy": "gh-pages -d .",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,json,md,yml,html}": "prettier --write",
+        "{src,demo}/**/!(*.test).js": "eslint --fix"
     },
     "devDependencies": {
         "@vitest/coverage-v8": "^3.0.0",
         "esbuild": "^0.25.0",
-        "eslint": "^6.8.0",
-        "eslint-config-piecioshka": "^2.0.2",
+        "eslint": "^8.57.1",
+        "eslint-config-piecioshka": "^3.0.0",
+        "eslint-config-prettier": "^9.1.2",
         "gh-pages": "^2.2.0",
+        "happy-dom": "^20.10.6",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.4.0",
         "nock": "^12.0.3",
         "node-fetch": "^2.6.0",
+        "prettier": "^3.9.2",
+        "typescript": "^6.0.3",
         "vitest": "^3.0.0"
     },
     "repository": {
@@ -39,6 +52,7 @@
         "demo",
         "dist",
         "src",
+        "!src/*.test.js",
         "package.json",
         "README.md",
         "LICENSE"
