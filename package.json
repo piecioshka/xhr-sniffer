@@ -17,6 +17,7 @@
         "count": "find . -name '*.js' -not -path './node_modules/*' -not -path './coverage/*' | xargs wc -l | sort -r",
         "build": "esbuild src/browser.js --bundle --outfile=dist/xhr-sniffer.browser.js --platform=browser",
         "lint": "eslint src/ demo/",
+        "prepublishOnly": "npm run build",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d ."
     },
