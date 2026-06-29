@@ -7,9 +7,8 @@ module.exports = {
         browser: true,
         node: true,
         commonjs: true,
-        amd: true,
+        amd: true
         // jquery: true,
-        jasmine: true
     },
 
     // https://eslint.org/docs/rules/
