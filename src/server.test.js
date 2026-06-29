@@ -3,14 +3,17 @@ import { describe, it, expect, vi } from 'vitest';
 import nock from 'nock';
 import nodeFetch from 'node-fetch';
 
-import sniffer from '../../../src/server.js';
+import sniffer from './server.js';
 
 const nFetch = nodeFetch.default || nodeFetch;
 
 nock('https://example.org/')
-    .get('/first').reply(200, '1')
-    .get('/second').reply(200, '2')
-    .get('/third').reply(200, '3');
+    .get('/first')
+    .reply(200, '1')
+    .get('/second')
+    .reply(200, '2')
+    .get('/third')
+    .reply(200, '3');
 
 function delay(time) {
     return new Promise((resolve) => {
@@ -22,7 +25,9 @@ describe('xhr-sniffer', () => {
     const REQUEST_DELAY = 200;
 
     it('should execute console.log', async () => {
-        const logger = vi.spyOn(global.console, 'log').mockImplementation(() => {});
+        const logger = vi
+            .spyOn(global.console, 'log')
+            .mockImplementation(() => {});
 
         try {
             await nFetch('https://example.org/first');
@@ -40,7 +45,9 @@ describe('xhr-sniffer', () => {
     });
 
     it('should returns Date in console.log', async () => {
-        const logger = vi.spyOn(global.console, 'log').mockImplementation(() => {});
+        const logger = vi
+            .spyOn(global.console, 'log')
+            .mockImplementation(() => {});
         const year = new Date().getFullYear();
 
         try {
