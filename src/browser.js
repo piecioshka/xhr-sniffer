@@ -42,3 +42,33 @@ const { formatter } = require('./common');
     };
 
 })(window.XMLHttpRequest);
+
+(function (fetch) {
+
+    const MAX_HTTP_METHOD_NAME = 6;
+
+    window.fetch = function (resource, init) {
+        const startRequestTime = Date.now();
+        const url = (resource && resource.url) || resource;
+        const methodRaw = (init && init.method) || (resource && resource.method) || 'GET';
+        const method = methodRaw.padEnd(MAX_HTTP_METHOD_NAME);
+
+        return fetch.apply(this, arguments).then((response) => {
+            const duration = Date.now() - startRequestTime;
+
+            console.log(formatter({
+                label: 'Fetch',
+                method,
+                status: response.statusText,
+                url,
+                duration
+            }));
+
+            return response;
+        }, (err) => {
+            console.error(err);
+            throw err;
+        });
+    };
+
+})(window.fetch);

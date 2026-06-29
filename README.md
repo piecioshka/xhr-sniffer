@@ -17,7 +17,7 @@
 
 - ✅ Display logs of `XMLHttpRequests` in DevTools Console
 - ✅ Display logs of `http` module in `Node.js`
-- ⛔️ Sniffing `Fetch API`
+- ✅ Sniffing `Fetch API`
 
 ## Usage
 
