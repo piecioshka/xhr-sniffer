@@ -43,6 +43,9 @@
         "README.md",
         "LICENSE"
     ],
+    "engines": {
+        "node": ">=18"
+    },
     "keywords": [
         "sniff",
         "sniffer",
