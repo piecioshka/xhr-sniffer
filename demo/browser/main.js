@@ -6,4 +6,9 @@ function makeRequest() {
     xhr.send();
 }
 
+function makeFetch() {
+    window.fetch('/');
+}
+
 makeRequest();
+makeFetch();

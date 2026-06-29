@@ -1,11 +1,14 @@
 # xhr-sniffer
 
+<!-- prettier-ignore-start -->
 [![node version](https://img.shields.io/node/v/xhr-sniffer.svg)](https://www.npmjs.com/package/xhr-sniffer)
 [![npm version](https://badge.fury.io/js/xhr-sniffer.svg)](https://badge.fury.io/js/xhr-sniffer)
 [![downloads count](https://img.shields.io/npm/dt/xhr-sniffer.svg)](https://www.npmjs.com/package/xhr-sniffer)
 [![size](https://packagephobia.com/badge?p=xhr-sniffer)](https://packagephobia.com/result?p=xhr-sniffer)
 [![license](https://img.shields.io/npm/l/xhr-sniffer.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml)
+<!-- prettier-ignore-end -->
+
 
 🔨 Sniff HTTP requests making by XHR in the browser or HTTP module in Node.js
 
@@ -17,7 +20,7 @@
 
 - ✅ Display logs of `XMLHttpRequests` in DevTools Console
 - ✅ Display logs of `http` module in `Node.js`
-- ⛔️ Sniffing `Fetch API`
+- ✅ Sniffing `Fetch API`
 
 ## Usage
 
@@ -41,11 +44,10 @@ xhrSniffer.uninstall();
 
 ### Sniff requests in `browser`
 
-Attach files in `<head>` tag:
+Attach the bundled file in `<head>` tag:
 
 ```html
-<script src="xhr-sniffer/src/common.js"></script>
-<script src="xhr-sniffer/src/browser.js"></script>
+<script src="xhr-sniffer/dist/xhr-sniffer.browser.js"></script>
 ```
 
 Next, make some XMLHttpRequests requests.
