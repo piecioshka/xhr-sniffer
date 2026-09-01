@@ -7,7 +7,7 @@
 [![downloads count](https://img.shields.io/npm/dt/xhr-sniffer.svg)](https://www.npmjs.com/package/xhr-sniffer)
 [![size](https://packagephobia.com/badge?p=xhr-sniffer)](https://packagephobia.com/result?p=xhr-sniffer)
 [![license](https://img.shields.io/npm/l/xhr-sniffer.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/xhr-sniffer/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/xhr-sniffer/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/xhr-sniffer/actions/workflows/ci.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 <!-- prettier-ignore-end -->
